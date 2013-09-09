@@ -1,8 +1,10 @@
 #include "Core/SkyEngine.h"
 #include <d3d9.h>
+
 #include "Plugin/D3D9/D3D9RenderEngine.h"
-#include "Core/CoreUtil.h"
+
 #include "Plugin/D3D9/D3D9PreDeclare.h"
+#include "Plugin/D3D9/D3D9RenderWindow.h"
 
 D3D9RenderEngine::D3D9RenderEngine(){
 	mod_dxd9_ = ::LoadLibraryW(L"D3D9.dll");

@@ -7,6 +7,7 @@
 #include "Plugin/D3D9/D3D9RenderEngine.h"
 
 D3D9RenderWindow::D3D9RenderWindow( RenderSettings const & settings ){
+	UNUSED(settings);
 	D3D9RenderEngine re = *check_cast<D3D9RenderEnginePtr>(&Context::Instance().RenderFactoryInstance().RenderEngineInstance());
 	if( re.Device() ){
 	}
